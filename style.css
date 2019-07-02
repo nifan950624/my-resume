@@ -31,6 +31,7 @@ a:hover {
   color: white;
 }
 
+
 .avatar {
   text-align: center
 }
@@ -203,6 +204,15 @@ a:hover {
 
 .project p {
   line-height: 20px;
+}
+
+.project p>a {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 80%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; 
 }
 
 .project .prj3 {
