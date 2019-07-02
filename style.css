@@ -1,0 +1,210 @@
+b {
+  font-weight: bold;
+}
+
+a:hover {
+  color: red; 
+}
+
+.resume {
+  display: flex;
+}
+
+.resume .float {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+.resume .float .downResume {
+  display: block;
+  line-height: 30px;
+  padding: 0 15px;
+  background: #eee;
+  box-shadow: -1px 1px 5px rgba(56, 30, 67, 0.3)
+}
+
+.resume-left {
+  flex: 0 0 260px;
+  width: 260px;
+  background: rgb(56, 30, 67);
+  color: white;
+}
+
+.avatar {
+  text-align: center
+}
+
+.avatar .text {
+  height: 108px;
+  line-height: 108px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.avatar .image-wrapper {
+  position: relative;
+  height: 0;
+  padding-bottom: 190px
+}
+
+.avatar .image-wrapper::before,.image-wrapper::after {
+  position: absolute;
+  content: '';
+  display: block;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 35px;
+  background: white;
+}
+
+.avatar .image-wrapper::after {
+  right: 0;
+}
+
+.avatar .image-wrapper .image{
+  border: 4px solid white;
+  border-radius: 50%;
+}
+
+.avatar .name {
+  margin-top: 5px;
+  line-height: 120px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.avatar .desc {
+  margin-bottom: 50px;
+  height: 15px;
+  line-height: 15px;
+  font-size: 0; 
+}
+
+.avatar .desc .dt,
+.avatar .desc .dd {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.myMsg .title,
+.rating h2
+{
+  text-align: center;
+  height: 60px;
+  line-height: 60px;
+  background: rgb(135,122,140);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.myMsg>dl {
+  padding: 20px 0 30px 0;
+}
+
+.myMsg dt {
+  display: inline-block;
+  line-height: 40px;
+  width: 25%;
+  text-align: right;
+}
+
+.myMsg dd {
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 20px;
+  line-height: 40px;
+  width: 75%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden; 
+}
+
+.rating p {
+  padding:30px 20px 30px 20px;
+  line-height: 25px;
+  text-align: center;
+}  
+
+.resume-right {
+  flex: 1;
+  padding-left: 43px;
+}
+
+.resume-right .split{
+  position: relative;
+  margin-bottom: 30px;
+  max-width: 100%;
+  text-indent: 2em;
+  line-height: 36px;
+  font-size: 20px;
+  font-weight: 700;
+  color:white;
+}
+.resume-right .split::before{
+  content: '';
+  position: absolute;
+  top:0; right: 0;bottom: 0;left: 0;
+  z-index: -1;
+  background: rgb(56, 30, 67);
+  transform: perspective(.5em) rotateX(.2deg);
+  transform-origin: bottom right;
+}
+
+.resume-right .split::after{
+  content: '';
+  position: absolute;
+  top:0; right: 0;bottom: 0;left: 40%;
+  z-index: -1;
+  background: rgb(136,121,140);
+  border-left: 4px white solid;
+  transform: perspective(.5em) rotateX(.2deg);
+  transform-origin: bottom right;
+}
+
+.resume-right .skill {
+  margin-top: 70px;
+}
+
+.resume-right .skill h2 {
+  margin: 10px 0; 
+  font-size: 17px;
+  font-weight: 700;
+} 
+
+.resume-right .skill p {
+  margin-right: 40px;
+  padding-bottom: 10px; 
+  line-height: 20px;
+  border-bottom: 1px solid rgba(7,17,27,.1)
+}
+.resume-right .skill p:last-child {
+  border: none;
+}
+
+.project {
+  margin-top: 10px; 
+}
+
+.project h2{
+  margin: 10px 0; 
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.project .prj1, 
+.project .prj2, 
+.project .prj3 { 
+  margin-right: 40px;
+  padding-bottom: 10px; 
+  border-bottom: 1px solid rgba(7,17,27,.1)
+}
+
+.project p {
+  line-height: 20px;
+}
+
+.project .prj3 {
+  border: none;
+}
