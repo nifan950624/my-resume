@@ -53,9 +53,6 @@ table {
   border-spacing: 0;
 }
 
-a:hover {
-  text-decoration: none;
-}
 
 .visible {
   visibility: visible !important;
